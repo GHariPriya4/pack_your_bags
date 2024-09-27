@@ -1,0 +1,709 @@
+/* popup */
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .popup-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .popup-close:hover,
+  .popup-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container-fluid{
+    padding: 3% 15% !important; /* padding 7% to bottom */
+    
+}
+
+#title{
+    background-color:#055E68;
+    color:#fff;
+    
+}
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+    font-size: 3.5rem!important;
+    line-height: 1.5!important;
+}
+.travel-image {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    width: 80%;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.introduction{
+    color: white;
+    font-size:large;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 500 !important;
+    font-size: 3rem!important;
+    margin-bottom: 20px !important;
+  
+}
+h6{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px !important;
+    line-height: 0.5!important;
+
+}
+h3{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 900 !important;
+    font-size: 1.5rem !important;
+}
+p{
+    font-size:large;
+    font-family: 'Ubuntu',sans-serif;
+    color: #8f8f8f;
+}
+.Download-button2{
+    margin-left: 25px;
+}
+
+.Places{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f1fafb;
+
+    
+}
+
+
+
+.places-section{
+    
+    margin: 0px;
+}
+.intro-picture {
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0 20px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0 0 20px 0px rgb(0 0 0 / 5%);
+    border-radius: 15px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.intro-picture:hover{
+    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    cursor: pointer;
+}
+.card.intro-picture {
+    height: 80vh;
+    margin-bottom: 2em;
+}
+
+/* navigation bar */
+.navbar-brand{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 900 !important;
+    font-size: 2.5rem !important;
+    font-weight:bold !important;
+}
+.navbar{
+    padding: 0 0 4.5rem !important;
+    /* position: fixed !important;
+    margin:15% !important;
+    background-color: #055E68; */
+}
+.nav-item{
+    padding:0 18px !important;
+}
+.nav-link{
+    font-size: 1.2rem !important;
+    font-family: 'Montserrat-thin', sans-serif;
+}
+
+
+
+/* services */
+#services{
+    padding: 0 15% 0 15% ;
+    /* background-color:white; */
+    bottom: 230px;  /*  here the location remained same adding  bottom made this feature container to give space in bottom */ 
+    margin: 0; 
+    
+   
+}
+.feature-box{
+    text-align: center;
+    padding: 5% 4.5% 4% 6% !important;
+    margin: 0;
+    
+    
+}
+.feature-paragraph{
+    color:#8f8f8f;
+    
+}
+.feature-paragraph1{
+    color:black;
+    
+}
+/* fontawesome */
+.icon{
+    color: #055E68!important;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color:#3A9188!important;
+}
+
+/* testmonial */
+#testimonials{
+    text-align: center;
+    background-color:#3A9188 ;
+    color:white;
+   /* margin-left: 55px;
+   margin-right: 55px; */
+   
+}
+.carousel-item{
+    padding:7% 15% ;
+    
+}
+
+.testimonial-image{
+    width:20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.testimonial-image1{
+    width:20%;
+    
+    margin: 20px;
+}
+#press{
+    background-color:#055E68;
+    text-align: center;
+    padding-bottom: 3%;
+    
+}
+
+.press-log{
+    width: 15%;
+    margin:20px 20px 50px 20px;
+}
+/* pricing */
+#pricing{
+    padding: 100px ;
+    text-align: center;
+    background-color: #f1fafb;
+    
+}
+
+
+/* making pictures responsive */
+@media (max-width : 993px){
+
+    .intro-picture{
+        /* position: static !important; */
+        text-align: center!important;
+    }
+    /* .services-paragraph{
+        position: static !important;
+        text-align: center !important;
+    } */
+    #title{
+        text-align: center;
+    }
+    .travel-image{
+        margin-top: 50px !important;
+    }
+}
+/* .intro-picture{
+    position:relative;
+} */
+/* .services-paragraph{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+/* contact section */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #055E68;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3A9188;
+  }
+  
+  /* Style the container/contact section */
+  #last-container {
+    border-radius: 5px;
+    /* background-color: #f1fafb; */
+    padding: 10px;
+    margin-left:  15%;
+    margin-right:  15%;
+    margin-top: 100px;
+    
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    margin: auto;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* cta */
+#cta{
+    background-color: #055E68;
+    color: #fff;
+    padding: 5% 25% 5% !important;
+    text-align: center;
+    margin-top:100px ;
+}
+
+
+/* footer */
+#footer{
+    text-align: center;
+    margin-top:70px ;
+    margin-bottom:70px ; 
+    
+}
+.social-media{
+    margin: 20px 10px;
+}
+
+.section-services {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f1fafb;
+    
+	color: #202020;
+	padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.section-services .header-section {
+	margin-bottom: 34px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #0da574;
+    border-radius: 3px;
+}
+
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #504f93;
+    border-radius: 3px;
+}
+
+.section-services .header-section .description {
+	font-size:  large!important;
+    color: #282828 !important;
+    font-family: 'Ubuntu',sans-serif !important;
+    line-height: 10px !important;
+    font-weight: bold !important;
+}
+
+.section-services .single-service {
+    position: relative;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+    height:55vh;
+    box-shadow: 2px 2px 15px hsl(0deg 0% 50% / 40%);
+}
+
+.section-services .single-service .content {
+	position: relative;
+	z-index: 20;
+}
+
+.section-services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #055E68;
+    border: 6px solid #0da574;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.section-services .single-service:hover .circle-before {
+	width: 100%;
+	height: 100%;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.section-services .single-service .services-icon {
+	display: inline-block !important;
+	margin-bottom: 26px !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 5px !important;
+    line-height: 70px !important;
+    text-align: center !important;
+    color: #fff !important;
+    font-size: 30px !important;
+    transition: all .3s !important;
+    padding: 0px 10px !important;
+}
+
+.section-services .single-service:hover .services-icon {
+	background-color: #fff !important;
+	color: #ff4500 !important;
+}
+
+.section-services .single-service .title {
+    margin-bottom: 18px;
+	font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .title {
+	color: #fff;
+}
+
+.section-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .description {
+	color: #fff;
+}
+
+.section-services .single-service a {
+	position: relative;
+	font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover a {
+	color: #fff;
+}
+
+.section-services .single-service a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #ff4500;
+	transition: background-color .3s;
+}
+
+.section-services .single-service:hover a:after {
+	background-color: #fff;
+}
+
+/* new pricing */
+.pricing-container{
+    background-color: #f1fafb !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pricingTable {
+    text-align: center;
+    background: #fff;
+    margin: 0 -15px;
+    box-shadow: 0 0 10px #ababab;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    color: #cad0de;
+    transform: scale(1);
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover {
+    transform: scale(1.05);
+    z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+    padding: 40px 0;
+    background: #f5f6f9;
+    border-radius: 10px 10px 50% 50%;
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover .pricingTable-header {
+    background: #3A9188
+}
+
+.pricingTable .pricingTable-header i {
+    font-size: 50px;
+    color: #858c9a;
+    margin-bottom: 10px;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .price-value {
+    font-size: 35px;
+    color: #3A9188;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+    display: block;
+    font-size: 14px;
+    color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+    color: #fff
+}
+
+.pricingTable .heading {
+    font-size: 24px;
+    color: #3A9188;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.pricingTable .pricing-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+    line-height: 30px;
+    color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+    background: #3A9188;
+    text-transform: uppercase;
+    transition: all .3s ease 0s
+}
+
+.pricingTable .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #3A9188
+}
+.pricingTable#055E68 .heading,
+.pricingTable#055E68 .price-value {
+    color: #055E68;
+}
+
+.pricingTable#055E68 .pricingTable-signup a,
+.pricingTable#055E68:hover .pricingTable-header {
+    background: #055E68;
+}
+
+.pricingTable#055E68 .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #055E68;
+}
+
+.pricingTable#0da574 .heading,
+.pricingTable#0da574 .price-value {
+    color: #0da574;
+}
+
+.pricingTable#0da574 .pricingTable-signup a,
+.pricingTable#0da574:hover .pricingTable-header {
+    background: #0da574;
+}
+
+.pricingTable#0da574 .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #0da574;
+}
+
+.pricingTable#0da574:hover .price-value {
+    color: #fff;
+}
+
+
+@media screen and (max-width:990px) {
+    .pricingTable {
+        margin: 0 0 20px
+    }
+}
+
+/* cartoon image */
+ 
+.animation-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Change from right to left */
+    z-index: 999;
+  }
+.animation-container {
+    display: inline-block;
+    padding: 10px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.animation-container img {
+   border: none;
+   width: 150px;
+   height: 150px;
+   margin: 10px;
+   animation: animate 2s infinite ease-in-out;
+}
+
+@keyframes animate {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-20px);
+}
+100% {
+  transform: translateY(0);
+}
+} 
+
+/* video */
+
+  #myVideo {
+    width: 100%;
+    max-width: 900px;
+    height: 10%;
+    max-height: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Change the color of the controls */
+  #myVideo::-webkit-media-controls-panel {
+    background-color: #333;
+    color: white;
+  }
+
+  /* Hide the fullscreen button */
+  #myVideo::-webkit-media-controls-fullscreen-button {
+    display: none;
+  }
+  .Nvideo{
+    background-color: #f1fafb;
+  }

@@ -1,0 +1,62 @@
+/* navigation bar */
+.navbar-brand{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 900 !important;
+    font-size: 2.5rem !important;
+    font-weight:bold !important;
+    padding-left: 150px;
+}
+.navbar{
+    padding: 1rem 0 4rem !important;
+    /* position: fixed !important; */
+   
+    background-color:cadetblue;
+}
+.nav-item{
+    padding: 0 18px !important;
+}
+.nav-link{
+    font-size: 1.2rem !important;
+    font-family: 'Montserrat-thin', sans-serif;
+}
+.collapse{
+    padding-right: 150px;
+}
+
+.heading{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    font-size: 2.5rem !important;
+    font-weight:bold !important;
+    
+}
+
+
+
+/* title */
+
+#title{
+    padding: 20px 0 50px 0;
+}
+#title{
+    background-color:cadetblue;
+    color:#fff;
+    text-align: center;
+    
+}
+.title-heading{
+    padding:90px 0;
+}
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+    font-size: 3rem!important;
+    line-height: 1.5!important;
+}
+
+.travel-image_india {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    width: 70%;
+}
